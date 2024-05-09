@@ -1,4 +1,4 @@
 #!/usr/bin/bash
-for file in $( ls -A | grep '\..*' | grep -v '\.git' ); do
+for file in $( ls -A | grep '\..*' | grep -v '^\.git$' ); do
 	ln -srf $file ~/$file
 done
