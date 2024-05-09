@@ -116,5 +116,4 @@ if ! shopt -oq posix; then
   fi
 fi
 
-alias python=python3
 
