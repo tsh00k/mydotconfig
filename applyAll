@@ -1,4 +1,5 @@
 #!/usr/bin/bash
 for file in $( ls -A | grep '^\..*' | grep -v '^\.git$' ); do
 	ln -srf $file ~/$file
+	dos2unix $file
 done
